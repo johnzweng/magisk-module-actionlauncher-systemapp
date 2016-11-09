@@ -1,20 +1,26 @@
-# How to Create A New Repo
-1. Fork this repo
-2. Edit "config.sh", and follow the instructions in the script file to create your own Magisk Module. Note that you might want to use Notepad++ on Windows, since the script files are using Unix endline.
-3. Edit "module.prop" with the manifest of your module
-4. Edit "changelog.txt", the info will be shown in Magisk Manager
-5. Edit the description of your Github repo to the ID of the module. Magisk Manager uses that value as identification
-5. Contact @topjohnwu on XDA for a request to add a new module repo. You'll get an empty repo with permission only given to you and the owners of Magisk-Modules-Repo.
-6. Push your module to the new repo created for you. You can push updates directly to your repo in the future as you wish.
+# Magisk Module: "ActionLauncher as System app"
 
-# Notes
-1. In the module.prop file, version is any string you like, any fancy version name (e.g. ultra-beta-v0.0.0.1) is allowed. However, the versionCode "MUST" be an integer. The value is used for version comparison.
-2. Make sure the ID in module.prop doesn't contain any spaces.
-3. Any changes to the branch "master" will be reflected to all users immediately. If you are working on an update for a module, please work on another branch, make sure it works, and then merge the changes to master.
+*This is a module for the Magisk framework. If you don't know what Magisk is or does, please stop now and head over to the Magisk thread(s) on XDA:*
 
-# Update A Module in a Nutshell
-1. Open a new branch, and start working on it
-2. Test if everything works
-3. Bump up the versionCode in module.prop, or Magisk Manager won't know that your module is updated!
-4. Edit changelog.txt with the changes you made
-3. Merge the changes to master, all users will now receive the update in Magisk Manager
+- [Magisk Forum on XDA developers](http://forum.xda-developers.com/apps/magisk)
+
+### Description
+
+This module is very simple: it does nothing else than placing the apk file of the launcher [Action Launcher 3](https://play.google.com/store/apps/details?id=com.actionlauncher.playstore) under `/system/app/ActionLauncher/ActionLauncher.apk`
+
+The apk file contained in this repo is the one downloaded from PlayStore (currently in version 3.11.4)
+
+### Future Updates
+Even if Action Launcher brings out future updates, you should be able to update it normally via Play Store as any other pre-installed system app which is on Play Store.
+
+
+### Why Action Launcher as system app?
+The reason why somebody wants to have Action Launcher 3 installed as a sytem app is the "**Google Now Integration**" feature of Action Launcher. This allows seamless integration of the Google Now screen (when you swipe in from the left on the first screen).
+
+But this only works when the launcher is installed as a system app.
+
+### Why Magisk?
+While it's perfectly ok to simply move the Action Launcher 3 APK file to the `/system` partition via recovery or using a root file-explorer, this will modify the `/system` partition. This may have impacts on future system updates of your phone or other negative effects.
+
+However, [Magisk](http://forum.xda-developers.com/apps/magisk) is a framework that allows developers to make all system modifications *system-less* (without any physical modification of the `/system` partition) and makes them more hassle-free. Read up the Magisk threads on XDA-Developers for more information about Magisk.
+

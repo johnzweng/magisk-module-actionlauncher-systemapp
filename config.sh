@@ -1,9 +1,8 @@
 ##########################################################################################
 #
-# Magisk
-# by topjohnwu
+# Magisk Module ActionLauncher as System app
+# by j.zweng, based on the template by topjohnwu
 # 
-# This is a template zip for developers
 #
 ##########################################################################################
 ##########################################################################################
@@ -36,7 +35,7 @@ CACHEMOD=false
 
 # This will be the folder name under /magisk or /cache/magisk
 # This should also be the same as the id in your module.prop to prevent confusion
-MODID=template
+MODID=at.zweng.magisk.actionlauncher.system
 
 # Set to true if you need automount
 # Most mods would like it to be enabled
@@ -58,9 +57,23 @@ LATESTARTSERVICE=false
 # Set what you want to show when installing your mod
 
 print_modname() {
-  ui_print "*******************************"
-  ui_print "     Magisk Module Template    "
-  ui_print "*******************************"
+  ui_print "***************************************"
+  ui_print "***************************************"
+  ui_print "   Magisk Module ActionLauncher"
+  ui_print "   ----------------------------"
+  ui_print "   ActionLauncher version: 3.11.4"
+  ui_print "   "
+  ui_print "   This Magisk module will install the"
+  ui_print "   ActionLauncher apk as system app."
+  ui_print "   "
+  ui_print "   This Magisk module was packed by"
+  ui_print "   xda user androcheck (john@zweng.at)"
+  ui_print "   "
+  ui_print "   "
+  ui_print "   All rights of ActionLauncher are "
+  ui_print "   with the authors of ActionLauncher."
+  ui_print "***************************************"
+  ui_print "***************************************"
 }
 
 ##########################################################################################
@@ -72,15 +85,16 @@ print_modname() {
 # Directories listed here however, will be directly mounted to the correspond directory in the system
 
 # This is an example
-REPLACE="
-/system/app/Youtube
-/system/priv-app/SystemUI
-/system/priv-app/Settings
-/system/framework
-"
+#REPLACE="
+#/system/app/YouTube
+#/system/priv-app/SystemUI
+#/system/priv-app/Settings
+#/system/framework
+#"
 
 # Construct your own list
 REPLACE="
+/system/app/ActionLauncher
 "
 
 ##########################################################################################

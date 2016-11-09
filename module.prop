@@ -1,9 +1,9 @@
-id=template
-name=Template Module
-version=v1
-versionCode=1
-author=topjohnwu
-description=A short description
-support=http://forum.xda-developers.com/showthread.php?t=3432382
-donate=http://topjohnwu.github.io/donate
+id=at.zweng.magisk.actionlauncher.system
+name=ActionLauncher as System App
+version=3.11.4
+versionCode=3110400
+author=androcheck
+description=Just installs ActionLauncher apk as a system app (as it needs to be a system app to use the Google Now Integration). I just packed the module, all All rights of ActionLauncher are with the authors of ActionLauncher.
+support=john_magisk_actionlauncher@zweng.at
+donate=http://j.zweng.at/donations_en.html
 cacheModule=false
