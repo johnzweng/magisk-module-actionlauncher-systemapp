@@ -6,4 +6,4 @@ author=johnzweng
 description=Just installs ActionLauncher apk as a system app (as it needs to be a system app to use the Google Now Integration). I just packed the module, all All rights of ActionLauncher are with the authors of ActionLauncher.
 support=john_magisk_actionlauncher@zweng.at
 donate=http://j.zweng.at/donations_en.html
-cacheModule=false
+template=3

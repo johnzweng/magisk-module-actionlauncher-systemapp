@@ -1,4 +1,0 @@
-3.11.4 (2016-11-09)
--------------------
-    - First version
-    - Includes ActionLauncher APK version 3.11.4 (versionCode 3110400) from PlayStore
