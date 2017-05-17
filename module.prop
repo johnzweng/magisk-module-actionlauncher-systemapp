@@ -1,7 +1,7 @@
 id=at.zweng.magisk.actionlauncher.system
 name=ActionLauncher as System App
-version=3.11.4
-versionCode=3110400
+version=3.12.4
+versionCode=3120402
 author=johnzweng
 description=Just installs ActionLauncher apk as a system app (as it needs to be a system app to use the Google Now Integration). I just packed the module, all All rights of ActionLauncher are with the authors of ActionLauncher.
 support=john_magisk_actionlauncher@zweng.at
